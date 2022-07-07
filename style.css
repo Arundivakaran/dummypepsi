@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif; 
+box-sizing: border-box;
+}
+
+#section {
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(19, 101, 182);
+    transition: 0.5s;
+}
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(132, 98, 212);
+    z-index: 1;
+}
+header .logo{
+    position: relative;
+    max-width: 75px;
+    display: flex;
+    align-items: center;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: large;
+    
+}
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+
+}
+.content .textbox h2{
+    color: azure;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .textbox h2 span{
+    font-size: 2em;
+}
+.content .textbox p{
+    color: white;
+}
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: whitesmoke;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* img{
+    width:70%;
+    margin-left: 150px;
+} */
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content #imgbox
+{
+    width: auto;
+    display: flex;
+    padding-right: 50px;
+    justify-content: flex-end;
+
+}
+.content #imgbox img 
+{
+    margin-left: 300px;
+    width:auto;
+    display: flex;
+    flex-wrap:wrap-reverse
+}
+.thumb
+{
+position: absolute;
+left: 50%;
+bottom: 50px;
+transform:translateX(-50%);
+display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.thumb li img{
+    max-width: 60px;
+
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+
+
+
+
